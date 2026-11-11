@@ -1,0 +1,114 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("image/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.app-header {
+    z-index: 10;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 1px 20px #1a1a1a;
+}
+
+.title {
+    color: #296dff;
+}
+
+.search-bar {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.weather-icon {
+    height: 128px;
+    width: 128px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.temperature,
+.wind {
+    font-size: small;
+}
+
+.date {
+    color: #888888;
+    font-size: small;
+    margin: 5px auto;
+}
+
+#message-container {
+    z-index: 9;
+    display: flex;
+    position: sticky;
+    top: 80px;
+    height: 40px;
+    align-items: center;
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    background: #296dff;
+}
+
+#message-container.hidden {
+    display: none;
+}
+
+#message {
+    margin-left: 10px;
+}
+
+#close-message {
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+    border: 0;
+    background: transparent;
+    justify-content: flex-end;
+}
+
+input {
+    color: white;
+    padding: 5px;
+    border: 2px solid #296dff;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+}
+
+#search {
+    color: white;
+    padding: 5px;
+    border: 2px solid #296dff;
+    border-radius: 10px;
+    background: #296dff;
+}
+
+#card-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid #296dff;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
