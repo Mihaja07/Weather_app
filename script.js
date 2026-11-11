@@ -1,53 +1,3 @@
-let sample = {
-    daily: {
-        time: [
-            "2026-01-01",
-            "2026-01-02",
-            "2026-01-03",
-            "2026-01-04",
-            "2026-01-05",
-            "2026-01-06",
-            "2026-01-07"
-        ],
-        temperature_2m_max: [
-            10,
-            22,
-            34,
-            40,
-            25,
-            36,
-            27
-        ],
-        temperature_2m_min: [
-            10,
-            25,
-            15,
-            35,
-            8,
-            24,
-            32
-        ],
-        windspeed_10m_max: [
-            10,
-            20,
-            12,
-            15,
-            23,
-            10,
-            25
-        ],
-        weather_code: [
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16
-        ]
-    }
-}
-
 const WMO_CODE_ICONS = {
     0: "https://cdn.meteocons.com/3.0.0-next.10/svg/fill/clear-day.svg",
     1: "https://cdn.meteocons.com/3.0.0-next.10/svg/fill/mostly-clear-day.svg",
@@ -90,7 +40,7 @@ function create_card(data) {
         `<div class="card">
             <h3>${get_day(date)}</h3>
             <img class="weather-icon" src="${WMO_CODE_ICONS[data.daily.weather_code[i]]}"/>
-            <p class="temperature"> Temperature: ${data.daily.temperature_2m_max[i]}° - ${data.daily.temperature_2m_max[i]}°</p>
+            <p class="temperature"> Temperature: ${data.daily.temperature_2m_min[i]}° - ${data.daily.temperature_2m_max[i]}°</p>
             <p class="wind">Wind speed: ${data.daily.windspeed_10m_max[i]} km/h</p>
             <p class="date">${date}</p>
         </div>`

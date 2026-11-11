@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("image/background.jpg");
@@ -16,12 +16,12 @@ body {
     position: sticky;
     top: 0;
     background: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: 0px 1px 20px #1a1a1a;
 }
 
 .title {
-    color: #296dff;
+    color: #7b43ff;
 }
 
 .search-bar {
@@ -41,7 +41,7 @@ body {
 
 .temperature,
 .wind {
-    font-size: small;
+    font-size: large;
 }
 
 .date {
@@ -82,7 +82,7 @@ body {
 input {
     color: white;
     padding: 5px;
-    border: 2px solid #296dff;
+    border: 2px solid #7b43ff;
     border-radius: 10px;
     background: transparent;
     backdrop-filter: blur(2px);
@@ -91,9 +91,9 @@ input {
 #search {
     color: white;
     padding: 5px;
-    border: 2px solid #296dff;
+    border: 2px solid rgb(105, 41, 255);
     border-radius: 10px;
-    background: #296dff;
+    background: #7b43ff;
 }
 
 #card-container {
@@ -107,8 +107,8 @@ input {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 2px solid #296dff;
+    border: 2px solid #7b43ff;
     border-radius: 10px;
     background: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
